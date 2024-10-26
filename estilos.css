@@ -1,0 +1,20 @@
+/*Ponemos estilo a todo el body*/
+body {
+    color: rgb(18, 4, 80);
+}
+/*Cuando tenemos un id, ponemos #id*/
+#titulo{
+    color: red;
+}
+/*Cuando queremos hacerle a una etiqueta, se tiene que solo poner la referencia*/
+p.texto{
+    color: rgb(238, 141, 162);
+}
+/*Cuando queremos hacerle a una etiqueta, se tiene que solo poner la referencia*/
+p.especial{
+    color: green;
+}
+/*Selecciona div, luego va a p*/
+div p{
+    color: aquamarine;
+}
