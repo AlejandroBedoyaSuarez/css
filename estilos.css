@@ -26,7 +26,7 @@ div h2, div h3{
 /*El "*" funciona para nombrar a todo el documento*/
 /*Tamaño de fuente de 24px*/
 /*aunque este abajo, solo aplicará en caso de que haya selectores que no estén definidos*/
-*{
+/*{
     font-size: 24px;
     color: black;
 }
@@ -151,3 +151,142 @@ font-family: Agdasima, Caveat, Josefin, sans-serif;
     /*el sombreado aparece detrás del texto*/
     text-shadow: 3px 4px 5px;
 }
+
+/*
+Los links tiene 4 estados:
+1 Nunca visitado
+2 Visitado
+3 Pasando el mouse por encima
+4 Cuando se encuentra activo
+Quitar el selector universal
+*/
+
+/*Con link indicamos el primero, cuando no fue visitado*/
+/*Este orden es muy importante, primero el nunca visitado, luego visitado
+luego sobre el cursor y luego el activo*/
+a:link{
+color: blueviolet ;
+}
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: aquamarine;
+}
+
+/**/
+ul{
+    background-color: cyan;
+    /*Este comando es para quitar los puntos*/
+    list-style-type: none;
+    /*padding-left: 0;*/
+    /*Mueve los puntos dentro*/
+    /*list-style-position: inside;*/
+}
+table{
+width: 100%;
+/*Se quita la separación de las celdas*/
+border-collapse: collapse;
+}
+
+th, td{
+    /*Añadimos borde al encabezado y a las celdas*/
+    border: solid 1px blue;
+    padding: 5px;
+}
+
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+
+}
+
+/*Even es Impar
+off es par
+*/
+
+/*Es muy importante el orden*/
+tr:nth-child(even){
+    background-color: black;
+}
+
+tr:hover{
+    /*Sirve para que el background cambie de color cuando pasa el mouse sobre las celdas*/
+    background-color: aquamarine;
+    /*Coloca el mouse con el simbolo de la mano*/
+    cursor:pointer
+}
+
+/*Display nos ayuda a colocar nuestros elementos de html sobre nuestro documento*/
+
+span{
+    /*Block viene en la mayoría de elementos, ocupa todo el bloque*/
+    /*Fuerza a que todos los elementos estén en distintas lineas*/
+    display: block;
+    /*A diferencia del width normal, este dice que el máximo es 300px pero puede ser menos
+    se puede comprobar achicando el texto y se ve que el mismo va reduciendo
+    */
+    max-width: 300px;
+    background-color: red;
+}
+.inline{
+    /*inline: todo en la misma linea*/
+    display: inline;
+}
+
+#position{
+    /*static valor por defecto
+    relative: no ocupan el lugar
+    fixed: se mueve con todo el documento
+    absolute: utiliza el espacio
+    sticky: Nos entrega una mezcla entre relative y fixed. Sirve para ícono de wsp
+    */
+    position: sticky;
+    left: 90px;
+    top: 20px;
+}
+
+/*Estos 3 sirven para logos*/
+/*float, mantiene flotando hacia la posición que se escoja*/
+.left{
+float:left;
+width: 200px;
+height: 200px;
+}
+.container{
+    height: 200px;
+}
+.right{
+    float: right;
+}
+
+.column{
+
+    margin: 0;
+    padding: 10 0px;
+    width: 33.3%;
+}
+
+/*a los inline no se les puede asignar el width ni el height*/
+/*inline block es para poder usarlos*/
+.inline-block{
+    display: inline;
+    height: 55px;
+    background-color: red;
+}
+
+/*Solo se centra el elemento con width y margin 0 auto*/
+.center{
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: center;
+}
+
+
