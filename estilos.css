@@ -18,3 +18,136 @@ p.especial{
 div p{
     color: aquamarine;
 }
+/*Qcuando se quiera añadir más de un selector es valor valor, valor
+en este caso, quiero que solo los h2 y h3 de un div se hagan así entonces es*/
+div h2, div h3{
+    color: brown;
+}
+/*El "*" funciona para nombrar a todo el documento*/
+/*Tamaño de fuente de 24px*/
+/*aunque este abajo, solo aplicará en caso de que haya selectores que no estén definidos*/
+*{
+    font-size: 24px;
+    color: black;
+}
+/*
+en caso de querer hacer un comentario de muchas lineas en css
+se hace
+así
+*/
+
+/*Colores con valor hexagesimal*/
+/*Estos empiezan con #númerodecolor*/
+/*
+.color{
+    /*con 6 dígitos, los primeros dos son rojo, los otros dos al verde y los últimos dos al azúl*/
+    /*Se puede hacer con rgb, hexagesimal y alfabético*/
+    /*color: #8f1c1c;
+}
+*/
+
+/*Bordes en CSS*/
+.color{
+    /*Borde: tamaño color estilo*/
+    /*dashed es un borde con lineas entrecortadas*/
+    /*solid es una linea sólida*/
+    /*dotted es el borde con puntos entrecortados*/
+
+/*
+groove
+ridge
+inset
+outset
+los 4 son para hacer bordes tridimensionales, la diferencia consiste en el color relativo de los bordes
+*/
+    /* border: 5px red outset; */
+
+    /*para hacer un borde ovalado*/
+    border-style: solid;
+    border-color: blue;
+    /*el borde se hace auto con radio*/
+    border-radius: 5px;
+    /*el ancho de mi borde crece*/
+    /*medidas absolutas*/
+    /*píxeles*/
+    /*"in" significa pulgada*/
+    /*"pt" son puntos y es 1/70 de pulgada*/
+    
+    /*Medidas relativas*/
+    /*
+    rem
+    em
+
+    */
+    border-width: 5px;
+}
+
+/*----------------------------------------------------------*/
+/*Background*/
+#background{
+    background-color: red;
+    /*opacidad es cuando el texto se aclara o se pone oscuro*/
+    /*0 no se ve nada y 1 se aclara*/
+    /*opacity: 0.3;*/
+    background-image: url(imagenes/Gohan\ vs\ Cell\ background.webp);
+    /*altura que tiene el contenedor*/
+    height: 400px;
+    /*
+    auto es valor por defecto
+    cover= nos entrega una imagen proporcional, se adapta a responsive
+    contain= intenta hacer alcanzar la imagen repitiendo
+    */
+    /*No se repetira la imagen, podemos con el repeat hacer que se repita horizontalmente o verticalmente
+    repeat-x= horizontalmente
+    repeat-y= se repite verticalmente
+    */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*sirve para modificar la posición del background*/
+    /*en el segundo valor solo se puede agregar top, center o bottom*/
+    background-position: center top ;
+
+}
+
+.margen{
+    background-color: chocolate;
+    /*podemos modificar con las manos del reloj
+    primer valor arriba
+    segundo derecha
+    tercero abajo
+    cuarto izquierda
+    */
+    margin: 15px 20px 25px 30px;
+    /*Padding es muy similar pero padding genera espacios dentro del elemento*/
+    padding: 30px 25px 20px 15px;
+    border: 1px black solid;
+    height: 100px;
+    width: 100px;
+    /*hidden: todo elemento que no llegue a verse, se oculta*/
+    /*scroll: Con este sale una barra donde se puede mover para ver la información restante*/
+    overflow: hidden;
+    /*Es un borde que esta fuera del borde y antes del margin*/
+    outline: 1px solid rgb(57, 156, 238);
+}
+
+.text{
+/*Cambia la fuente de la letra*/
+font-family: Agdasima, Caveat, Josefin, sans-serif;
+
+    /*Ubicación del texto*/
+    text-align: center;
+    /*en text decoration, none viene por defecto*/
+    /*
+    line through es que la linea esta en el centro de las letras
+    overline es que la linea está por encima del texto
+    */
+    text-decoration: underline;
+    /*Da sombreado al texto*/
+    /*Son 3 valores:
+    Primero: Hacia la derecha
+    Segundo: Hacia abajo
+    Tercero: Es el blur (difuminado) 
+    */
+    /*el sombreado aparece detrás del texto*/
+    text-shadow: 3px 4px 5px;
+}

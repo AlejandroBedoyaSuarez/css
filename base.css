@@ -1,0 +1,12 @@
+/*Aquí nosotros pondremos las fuentes*/
+/*Tenemos que ser ordenados y no amontonar todo*/
+/*Ponemos @import url*/
+/*
+visitamos google fonts
+seleccionamos una fuente
+nos vamos a "get font"
+nos vamos donde dice get embed code
+nos vamos a import (sirve para no tener que descargar y el recurso depende de google)
+y todo ese code lo pegamos dentro de url (sin los style)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Yellowtail&display=swap');
